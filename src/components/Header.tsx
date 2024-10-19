@@ -17,8 +17,17 @@ function Header() {
                     <Button.RightCircle classNameParent='dark:bg-zinc-50 p-5 rounded-full ml-3' classNameArrow='text-3xl' />
                 </Button>
             </div>
-            <Heading text='Developer' align='right' />
-            <p className='text-gray-400 mt-5 pr-20 text-1xl'>
+            <div className='flex w-full items-center'>
+                <p className='hidden text-gray-400 mt-5 pr-20 text-1xl lg:flex'>
+                    My goal is to
+                    <span className='text-zinc-50'> write maintainable, clean </span>
+                    and
+                    <span className='text-zinc-50'> understandable code </span>
+                    so the development process is enjoyable.
+                </p>
+                <Heading text='Developer' align='right' />
+            </div>
+            <p className='text-gray-400 mt-5 pr-20 text-1xl lg:hidden'>
                 My goal is to
                 <span className='text-zinc-50'> write maintainable, clean </span>
                 and

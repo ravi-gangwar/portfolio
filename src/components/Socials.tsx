@@ -5,7 +5,7 @@ function Socials() {
     return (
         <div>
             <p className='text-zinc-50 mt-8 mb-2 text-sm md:text-2xl'>.../ My socials ...</p>
-            <div className='flex items-center flex-wrap gap-2 lg:flex-none lg:justify-normal'>
+            <div className='flex items-center flex-wrap gap-2 md:justify-center lg:flex-none'>
                 {
                     socialAccounts.map((social, index) => {
 
@@ -20,7 +20,7 @@ function Socials() {
                                 className={`hover:cursor-pointer flex items-center px-2 py-1 md:px-5 md:py-2 border-2 border-zinc-50 rounded-3xl ${isEdgeElement ? 'xl:ml-3' : 'lg:ml-10 lg:mr-10'}`}
                             >
                                 <social.icon className='mr-2 text-sm md:text-2xl text-zinc-50' />
-                                <p className='dark:text-zinc-50 text-sm md:text-2xl'>{social.name}</p>
+                                <p className='dark:text-zinc-50 text-sm'>{social.name}</p>
                             </a>
                         )
                     })

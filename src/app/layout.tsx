@@ -25,7 +25,7 @@ export default function RootLayout({
         className={`${alegreya.className} antialiased`}
         style={{ backgroundColor: windowColor, maxWidth: '100vw', overflowX: "hidden" }}
       >
-        <main className="flex justify-center items-center">
+        <main className=" bg-zinc-300 flex justify-center items-center">
           {children}
         </main>
       </body>

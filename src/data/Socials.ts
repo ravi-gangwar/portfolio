@@ -1,6 +1,12 @@
 import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp, FaDiscord, FaInstagram } from 'react-icons/fa';
+import { MdEmail } from "react-icons/md";
 
 export const socialAccounts = [
+    {
+        name: 'Email',
+        link: 'https://github.com/yourprofile',  // Replace with actual link
+        icon: MdEmail
+    },
     {
         name: 'GitHub',
         link: 'https://github.com/yourprofile',  // Replace with actual link

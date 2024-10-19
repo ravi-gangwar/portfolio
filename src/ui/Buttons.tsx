@@ -24,17 +24,17 @@ function Button({ children, title = 'Click me!', isArrow, className }: ButtonPro
     )
 }
 
-Button.Title = function ButtonTitle() {
+Button.Title = function ButtonTitle({className}: {className: string}) {
     const context = useContext(ButtonContext);
     if (context == null) return null;
-    return <button className='min-h-10 dark:bg-zinc-50 dark:text-zinc-900 px-16 py-5 rounded-full italic text-2xl'>{context.title}</button>
+    return <button className={className}>{context.title}</button>
 }
 
-Button.RightCircle = function ButtonRightCircle() {
+Button.RightCircle = function ButtonRightCircle({classNameParent, classNameArrow}: {classNameParent: string, classNameArrow: string}) {
     const context = useContext(ButtonContext);
     if (context?.isArrow === false) return null;
-    return <span className='min-h-10 dark:bg-zinc-50 dark:text-zinc-900 px-5 py-5 rounded-full'>
-        <GoArrowRight className='dark:text-black text-white text-3xl' />
+    return <span className={classNameParent}>
+        <GoArrowRight className={classNameArrow} />
     </span>
 }
 

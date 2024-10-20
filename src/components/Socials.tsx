@@ -3,8 +3,8 @@ import React from 'react'
 
 function Socials() {
     return (
-        <div>
-            <p className='text-zinc-50 mt-8 mb-2 text-sm md:text-2xl'>.../ My socials ...</p>
+        <div className='mt-20'>
+            {/* <p className='text-zinc-50 mt-8 mb-2 text-sm md:text-2xl'>.../ My socials ...</p> */}
             <div className='flex items-center flex-wrap gap-2 md:justify-center lg:flex-none'>
                 {
                     socialAccounts.map((social, index) => {
